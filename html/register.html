@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="top-header">
+        <ul class="top-nav-left-links"> 
+            <a href="./Homepage.html">
+                <img src="../goldenCounty.svg" alt="Main logo">
+                </a>
+            <li><a href="#">Residents</a></li>
+            <li><a href="#">Location & Hours</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./bookLisiting.html">Books & More</a></li>
+            <li><a href="./myAccount.html">My Account</a></li>
+            <li><a href="./checkOut.html">My Cart</a></li>
+            <div class="search-area">
+                <div class="single-search">
+                    <input type="search" id="query" name="q"
+                    placeholder="Search..."
+                    aria-label="Search through site content">
+                </div>
+            </div>
+                
+        </ul>
+
+    </header>
+</body>
+<div class="registration">
+    <form action=".php">
+      <div class="header">
+        <h1>Register</h1>
+      </div>
+      <fieldset>
+        <div class="contact-item">
+            <div class="item">
+                <label for="fullName">Name<span>*</span></label>
+                <input type="text" name="FirstName"/>
+                <p>First</p>
+            </div>
+            <div class="item">
+                <br>
+                <input type="text" name="LastName" style="margin-top: 7px;">
+                <p>Last</p>
+            </div>
+        </div>
+        <div class="username">
+            <div class="item">
+                <label for="user">Username<span>*</span></label>
+                <input type="text" name="Username">
+            </div>
+        </div>
+        <div class="email">
+            <div class="item">
+                <label for="user">E-mail<span>*</span></label>
+                <input type="email" name="Email">
+            </div>
+        </div>
+        <div class="password">
+            <div class="item">
+                <label for="password">Password<span>*</span></label>
+                <input type="password" name="Password">
+            </div>
+        </div>     
+        <div class="bio">
+            <div class="item">
+            <label for="bio">Short bio</label>
+            <textarea id="instructions" rows="3" placeholder="Share a little information about yourself.."></textarea>
+        </div>
+      </fieldset>
+      <div class="btn-block">
+        <button type="submit" href="/">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</html>

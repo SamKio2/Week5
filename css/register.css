@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.top-header {
+    width: 100%;
+    height: 90px;
+    background: #14164A;
+    padding: 15px;
+    padding-left: 10px;
+}
+
+.top-header ul {
+    display: flex;
+    padding: 6px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.top-header ul li {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+
+}
+
+.top-nav-left-links a {
+    text-decoration: none;
+    color: white;
+}
+.single-search{
+    background-color: #FFFEFE;
+    width: 105px;
+    height: 38px;
+    border-radius: 30px;
+  }
+  
+  .single-search input {
+    all: unset;
+    font: 13px;
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+  }
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registration h1 {
+    font-family: 'Javanese Text';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    padding: 20px;
+    background: #fff;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-item .item {
+    
+    width: calc(50% - 8px);
+}
+
+.item label {
+    font-family: 'Jaldi', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.item p {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+input, select, textarea {
+    margin-bottom: 5px;
+    border: 1px solid #E7E5E5E8;
+}
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+ }
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+    resize: none;
+}
+
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+
+.item span {
+    color: red;
+}
+  
+button {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 10px;
+    width: 85px;
+    height: 34px;
+    border: none;
+    background:  #E7E5E5E8;
+    color: #000;
+    cursor: pointer;
+    }
+button:hover {
+    background:  #a3c2c2;
+}
