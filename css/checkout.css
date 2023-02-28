@@ -2,79 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: auto;
   }
   body {
     align-items: center;
 }
-.top-header {
-    width: 100%;
-    height: 90px;
-    background: #14164A;
-    padding: 15px;
-    padding-left: 10px;
-}
-
-.top-header ul {
-    display: flex;
-    padding: 6px;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
-.top-header ul li {
-    font-style: normal;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-
-}
-
-.top-nav-left-links a {
-    text-decoration: none;
-    color: white;
-}
-.single-search{
-    background-color: #FFFEFE;
-    width: 105px;
-    height: 38px;
-    border-radius: 30px;
-  }
-  
-  .single-search input {
-    all: unset;
-    font: 13px;
-    height: 100%;
-    width: 100%;
-    padding: 0px 10px;
-  }
-  
-  .container {
-      height: 100%;
-      width: 100%;
-  }
-  
   .top-line {
-      background-color: #14164A;
-      height: 126px;
+      background-color: #14164A; 
+      height: auto;
   }
   
   .top-line h1 {
       padding: 40px 100px ;
       font-weight: 700;
-      font-size: 30px;
+      font-size: 1.8rem;
       color: #F8D937C9;
       -webkit-text-stroke: 1px #000;
   }
   
-  .split-left {
-      position: fixed;
-      height: 100%;
+  .split-left { 
       width: 50%; 
   }
-  
-  .split-left {
-      background-color: #FFFEFE;
+  .form-box h4 {
+    font-size: 1.5rem;
   }
   
   .wrapper{
@@ -82,100 +32,99 @@
       justify-content: center;
       align-items: center;
   }
-  
-  .title{
-      padding: 25px;
-      width: 550px;
-  }
-  
-  .account-log{
-      font-weight: 400;
-      font-size: 10px;
-  }
-  .account-log a {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 10px;
-      color: #000;
-      text-decoration: none;
-  }
-  
-  .checkbox {
-      font-family: 'Inter', sans-serif;
-      font-size: 10px;
-      margin-bottom: 20px;
-  }
-  
-  .address {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-  }
-  
-  .contact-form{
-      margin-top: 15px;
-  }
-  
-  .contact-form .input-fields{
-      margin-bottom: 10px;
-  }
-  
-  ::placeholder {
-      color: #000;
-      opacity: 0.8; 
-  }
-  
-  .contact-form .contact-con{
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  .contact-form  input[type="text"]{
-      width: 100%;
-      border: 1px solid #000;
-      background-color: #FFFEFE;
-      padding: 5px;
-      outline: none;
-  }
-  
-  .contact-form .submit-button{
-      display: flex;
-      width: 161px;
-      height: 42px;
-      font-size: 15px;
-      background:#F8D937C9;
-      border: none;
-      border-radius: 20px;
-      padding: 12px;
-      margin-left: 30%;
-      margin-top: 23px;
-      cursor: pointer;
-  }
-  
-  .contact-form .submit-button :hover{
-      background: #ffd5d2;
-  }
-  
-  
-  .back a {
-      font-size: 14px;
-      color: #000;
-      text-decoration: none;
-  }
+.form-box p {
+    text-align: right;
+}
+
+.log {
+    justify-content: flex-end;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 81%;
+    margin-bottom: 2%;
+    padding: 1%;
+    /*border: 1px solid #ccc;
+    border-radius: 3px; */
+}
+
+.checkbox {
+    border: 1px solid #ccc;
+    border-radius: 3px
+}
+
+.address {
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type=name] {
+    width: 40%;
+    padding: 1%;
+    justify-content: space-around;
+}
+
+input[type=city] {
+    width: 81%;
+    padding: 1%;
+    /* margin-bottom: 2%; */
+    margin-top: 2%;
+}
+
+input[type=country] {
+    width: 36%;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+input[type=zip] {
+    padding: 1%;
+
+}
+
+input[type=phone] {
+    width: 81%;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+button {
+    font-size: 19px;
+    width: 30%;
+    height: 47px;
+    border: none;
+    border-radius: 20px;
+    background: #F8D937C9;
+    margin-top: 5%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: yellow;
+}
   
   .split-right {
-      margin-left: 50px;
       background-color:#E7E5E5E8;
+      position: fixed;
+      padding-right: 23.7%; 
+      margin-left: 100%;
+      padding-bottom: 18%;
+      padding-top: 20%;
   }
   
   .split-right h1 {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 14px;
+      font-weight: bold;
+      font-size: 1.3rem;
       margin-top: 40px;
       margin-left: 40px;
+      color: black;
   }
-  
   .box {
       display: flex;
       align-items: center;
@@ -189,15 +138,17 @@
     }
   
   .image p {
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
+    
+      font-size: 1.2rem;
       margin-left: 20px;
+      color: black;
   }
       
   .text {
-      font-size: 16px;
+      font-size: 1.2rem;
       text-align: center;
       padding-left: 20px;
+      color: black;
   }
   
   .memo p {
@@ -206,3 +157,199 @@
       text-align: center;
       margin-top: 160px;
   }
+  @media (max-width:767px) {
+    .top-line {
+        width: 100%;
+    }
+    
+    .top-line h1 {
+        padding: 40px 100px ;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #F8D937C9;
+        -webkit-text-stroke: 1px #000;
+    }
+    
+    .split-left { 
+        position: static;
+        width: 100%; 
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .form-box p {
+      text-align: right;
+  }
+  
+  .log {
+      justify-content: flex-end;
+      display: flex;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  input[type=text] {
+      width: 81%;
+      margin-bottom: 2%;
+      padding: 1%;
+      /*border: 1px solid #ccc;
+      border-radius: 3px; */
+  }
+  
+  .checkbox {
+     margin-left: 10%;
+  }
+  
+  .address {
+      margin-left: 10%;
+      font-size: 1.2rem;
+  }
+  .input-fields {
+    padding-left: 10%;
+  }
+  input[type=name] {
+      width: 40%;
+      padding: 1%;
+      justify-content: space-around;
+  }
+  
+  input[type=city] {
+      width: 81%;
+      padding: 1%;
+      /* margin-bottom: 2%; */
+      margin-top: 2%;
+  }
+  
+  input[type=country] {
+      width: 36%;
+      padding: 1%;
+      margin-top: 2%;
+  }
+  
+  input[type=zip] {
+      padding: 1%;
+  
+  }
+  
+  input[type=phone] {
+      width: 81%;
+      padding: 1%;
+  }
+  
+  button {
+      font-size: 19px;
+      width: 30%;
+      height: 47px;
+      border: none;
+      border-radius: 20px;
+      background: #F8D937C9;
+      margin-top: 5%;
+      margin-left: 25%;
+      cursor: pointer;
+  }
+  .split-right {
+    display: none;
+  }
+
+  }
+
+@media screen and (min-width: 768px)and (max-width: 1200px){
+    .top-line {
+        width: 100%;
+    }
+    
+    .top-line h1 {
+        padding: 40px 100px ;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #F8D937C9;
+        -webkit-text-stroke: 1px #000;
+    }
+    
+    .split-left { 
+        position: static;
+        width: 100%; 
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .form-box p {
+      text-align: right;
+  }
+  
+  .log {
+      justify-content: flex-end;
+      display: flex;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  input[type=text] {
+      width: 81%;
+      margin-bottom: 2%;
+      padding: 1%;
+      /*border: 1px solid #ccc;
+      border-radius: 3px; */
+  }
+  
+  .checkbox {
+     margin-left: 10%;
+  }
+  
+  .address {
+      margin-left: 10%;
+      font-size: 1.2rem;
+  }
+  .input-fields {
+    padding-left: 10%;
+  }
+  input[type=name] {
+      width: 40%;
+      padding: 1%;
+      justify-content: space-around;
+  }
+  
+  input[type=city] {
+      width: 81%;
+      padding: 1%;
+      /* margin-bottom: 2%; */
+      margin-top: 2%;
+  }
+  
+  input[type=country] {
+      width: 36%;
+      padding: 1%;
+      margin-top: 2%;
+  }
+  
+  input[type=zip] {
+      padding: 1%;
+  
+  }
+  
+  input[type=phone] {
+      width: 81%;
+      padding: 1%;
+  }
+  
+  button {
+      font-size: 19px;
+      width: 30%;
+      height: 47px;
+      border: none;
+      border-radius: 20px;
+      background: #F8D937C9;
+      margin-top: 5%;
+      margin-left: 25%;
+      cursor: pointer;
+  }
+  .split-right {
+    display: none;
+  }
+}

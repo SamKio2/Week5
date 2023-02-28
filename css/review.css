@@ -8,10 +8,11 @@ body {
 }
 .top-header {
     width: 100%;
-    height: 90px;
     background: #14164A;
-    padding: 15px;
-    padding-left: 10px;
+    padding: 25px;
+}
+.mobile-logo {
+    display: none;
 }
 
 .top-header ul {
@@ -29,29 +30,29 @@ body {
     text-align: center;
 
 }
+.top-nav-left-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .top-nav-left-links a {
     text-decoration: none;
     color: white;
 }
-.single-search{
-    background-color: #FFFEFE;
-    width: 105px;
-    height: 38px;
-    border-radius: 30px;
-  }
-  
-  .single-search input {
-    all: unset;
-    font: 13px;
-    height: 100%;
-    width: 100%;
-    padding: 0px 10px;
-  }
+.single-search input {
+    padding: 10px 5px;
+    border-radius: 20rem;
+    border: none;
+}
 
+
+input:focus {
+    outline: none;
+}
 .content {
-    width: 620px;
-    height: 500px;
+    width: 50%;
+    height: auto;
     background-color: #FFFEFE;
     float: right;
     margin-right: 135px;
@@ -60,7 +61,6 @@ body {
 .wrap {
     display: flex;
     align-items: center;
-    float: right;
     margin-right: 50px;
 }
 
@@ -77,7 +77,6 @@ body {
 }
 
 .content h1 {
-    font-family: 'Jaldi', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 34px;
@@ -85,7 +84,6 @@ body {
 }
 
 .content p {
-    font-family: 'Jaldi', sans-serif;
     font-size: 17px;
     margin-top: -20px;
     margin-bottom: 40px;
@@ -96,7 +94,6 @@ body {
 }
 
 .top-review h2 {
-    font-family: 'Jaldi', sans-serif;
     font-size: 25px;
     margin-left: 125px;
     margin-bottom: -15px;
@@ -104,7 +101,6 @@ body {
 }
 
 .top-review a {
-    font-family: 'Jaldi', sans-serif;
     font-size: 16px;
     margin-left: 125px;
 }
@@ -222,8 +218,8 @@ body {
 }
 
 .bar-container {
-    width: 187px;
-    height: 18px;
+    width: 80%;
+    height: auto;
     margin-left: 40px;
     background-color: #D9D9D9;
     text-align: center;
@@ -266,8 +262,8 @@ body {
 }
 
 .btn button {
-    width: 134px;
-    height: 31px;
+    width: 50%;
+    height: auto;
     background: #FFFEFE;
     border: 1px solid #B8B5B5FC;
     box-shadow: 0px 4px 4px #00000040;
@@ -278,4 +274,222 @@ body {
 
 .clear {
     clear: both;
+}
+@media (max-width:767px) {
+    .Main-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .top-header ul li {
+        font-weight: 200;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .top-nav-left-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .single-search input {
+        padding: 5px;
+    }
+    .content {
+        width: 50%;
+        height: auto;
+        background-color: #FFFEFE;
+    }
+    
+    .wrap {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+    
+    .text {
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .content h1 {
+        font-weight: 400;
+        font-size: .8rem;
+       
+    }
+    
+    .content p {
+        font-size: 1rem;
+
+    }
+    
+    .top-review h2 {
+        font-size: 1.5rem;
+    }
+    
+    .top-review a {
+        font-size: 1rem;
+        margin-left: 125px;
+    }
+    
+    .user {
+        display: flex;
+        align-items: center;
+        margin-left: 125px;
+    }
+    
+    .username {
+        font-size: 1rem;
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    
+    .avatar img {
+        width: 50%;
+        height: auto;
+        margin-top: -10px;
+    }
+    
+    .five-stars {
+        font-size: 1.2rem;
+       
+    
+    }
+    .review {
+        margin-left: 30%;
+    }
+    
+    
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sidebar h1 {
+        display: block;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: -5px;
+    }
+    
+    .sidebar p {
+
+        color: #676666;
+        margin-top: 2px;
+        margin-left: 60px;
+    }
+    
+    
+    .rating {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        gap: 5px;
+    }
+    
+    .tab {
+        display: inline-block;
+        margin-left: 40px;
+    }
+    
+    .rating-text {
+        font-family: 'Jaldi', sans-serif;
+        font-size: 1rem;
+        margin-top: -5px;
+    }
+    
+    .side {
+        font-family: 'Jaldi', sans-serif;
+        float: left;
+        width: 15%;
+        margin-top: 10px;
+    }
+    
+    .middle {
+        float: left;
+        width: 70%;
+        margin-top: 10px;
+        margin-left: -25px;
+    }
+    
+    .right {
+        text-align: right;
+    }
+    
+    .row:after {
+    
+        display: table;
+        clear: both;
+    }
+    
+    .bar-container {
+        width: 80%;
+        height: auto;
+        margin-left: 40px;
+        background-color: #D9D9D9;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .bar-5 {
+        width: 79%;
+        height: 18px;
+        border-radius: 10px;
+        background-color: #F8D937;
+    }
+    
+    .bar-4 {
+        width: 25%;
+        height: 18px;
+        border-radius: 10px;
+        background-color: #F8D937;
+    }
+    
+    .bar-3 {
+        width: 14px;
+        height: 18px;
+        border-radius: 10px;
+        background-color: #F8D937;
+    }
+    
+    .bar-2 {
+        width: 0%;
+        height: 18px;
+        border-radius: 10px;
+        background-color: #F8D937;
+    }
+    
+    .bar-1 {
+        width: 0%;
+        height: 18px;
+        border-radius: 10px;
+        background-color: #F8D937;
+    }
+    
+    .btn button {
+        width: 50%;
+        height: auto;
+        background: #FFFEFE;
+        border: 1px solid #B8B5B5FC;
+        box-shadow: 0px 4px 4px #00000040;
+        border-radius: 20px;
+        margin-top: 16px;
+        margin-left: 90px;
+    }
+    
+    
 }

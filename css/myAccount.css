@@ -6,16 +6,18 @@
 
 body {
     align-items: center;
+    background-image: url("../images/download.jpg");
+    background-size: 100%;
 }
-
 .top-header {
     width: 100%;
-    height: 90px;
     background: #14164A;
     padding: 25px;
-    padding-left: 10px;
 }
 
+.mobile-logo {
+    display: none;
+}
 .top-header ul {
     display: flex;
     padding: 6px;
@@ -32,68 +34,66 @@ body {
 
 }
 
+.top-nav-left-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.single-search input {
+    padding: 10px 5px;
+    border-radius: 20rem;
+    border: none;
+}
+
+
+input:focus {
+    outline: none;
+}
+
 .top-nav-left-links a {
     text-decoration: none;
     color: white;
 }
-.single-search{
-    background-color: #FFFEFE;
-    width: 105px;
-    height: 38px;
-    border-radius: 30px;
-  }
-  
-  .single-search input {
-    all: unset;
-    font: 13px;
-    height: 100%;
-    width: 100%;
-    padding: 0px 10px;
-  }
 
 .container {
     box-sizing: border-box;
     position: absolute;
-    width: 1480px;
-    height: 800px;
-    background-image: url(../download.jpg);
-    background-size: cover;
-    margin-bottom: 400px;
-    margin-left: -40px;
+    width: 100%;
+    height: auto;
     border: 1px solid;
 
 }
 
 .welcome {
-    width: 400px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px auto;
     font-weight: 200;
-    font-size: 30px;
-    line-height: 275px;
+    font-size: 2rem;
+    /* line-height: 275px; */
     color: yellow;
     -webkit-text-stroke: 1px black;
 }
 
 p {
     display: flex;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
 
 }
 
 .login-box {
     /* position: absolute; */
-    width: 400px;
+    width: 30%;
     height: 500px;
     background-color: white;
     /* color: white; */
     box-sizing: border-box;
     margin: 1px auto;
-    margin-right: 35%;
+    /* margin-right: 35%; */
 
 }
 
@@ -123,10 +123,10 @@ input[type="password"] {
     height: 40px;
     background: black;
     color: white;
-    font-size: 19px;
+    font-size: 1.2rem;
     border-radius: 20px;
     justify-items: left;
-    width: 200px;
+    width: 40%;
 }
 a.button{
     border: none;
@@ -134,12 +134,167 @@ a.button{
     height: 40px;
     background-color: black;
     color: white;
-    font-size: 18px;
-    border-radius: 19px;
-    justify-items: left;
-    width: 200px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    /* justify-items: left; */
+    width: 40%;
     text-decoration: none;
     display: flex;
-    margin-top: 20px;
-    justify-content: center;
+    align-items: center;
+    padding-left: 6%;
+    /* margin-top: 20px; */  
+}
+@media (max-width: 767px) {
+    .Main-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .top-header ul li {
+        font-weight: 200;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .top-nav-left-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .single-search input {
+        padding: 5px;
+    }
+    .container {
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+    
+    }
+    
+    .welcome {
+        height: auto;
+        font-size: 2rem;
+    }
+    
+    p {
+        display: flex;
+        font-size: 1.1rem;
+        font-weight: bold;
+    
+    }
+    
+    .login-box {
+        /* position: absolute; */
+        width: 70%;
+        background-color: white;
+        /* color: white; */
+        box-sizing: border-box;
+        margin: 1px auto;
+    
+    }
+    
+    .login-box input {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    
+    .login-box input[type="submit"] {
+
+        font-size: 1.2rem;
+        width: 40%;
+    }
+    a.button{
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        border-radius: 20px;
+        /* justify-items: left; */
+        width: 40%;
+        padding-left: 6%;
+        /* margin-top: 20px; */  
+    }
+}
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    .Main-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .top-header ul li {
+        font-weight: 200;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .top-nav-left-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .single-search input {
+        padding: 5px;
+    }
+    .container {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .welcome {
+        height: auto;
+        font-size: 2rem;
+    }
+    
+    p {
+        display: flex;
+        font-size: 1.1rem;
+        font-weight: bold;
+    
+    }
+    
+    .login-box {
+        /* position: absolute; */
+        width: 70%;
+        background-color: white;
+        /* color: white; */
+        margin: 1px auto;
+    
+    }
+    
+    .login-box input {
+        width: 80%;
+    }
+    
+    .login-box input[type="submit"] {
+
+        font-size: 1.2rem;
+        width: 40%;
+    }
+    a.button{
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        border-radius: 20px;
+        /* justify-items: left; */
+        width: 30%;
+        padding-left: 6%;
+        /* margin-top: 20px; */  
+    }
 }

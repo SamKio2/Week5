@@ -8,10 +8,11 @@ body {
 }
 .top-header {
     width: 100%;
-    height: 90px;
     background: #14164A;
-    padding: 15px;
-    padding-left: 10px;
+    padding: 25px;
+}
+.mobile-logo {
+    display: none;
 }
 
 .top-header ul {
@@ -29,25 +30,26 @@ body {
     text-align: center;
 
 }
-
+.top-nav-left-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .top-nav-left-links a {
     text-decoration: none;
     color: white;
 }
-.single-search{
-    background-color: #FFFEFE;
-    width: 105px;
-    height: 38px;
-    border-radius: 30px;
-  }
-  
-  .single-search input {
-    all: unset;
-    font: 13px;
-    height: 100%;
-    width: 100%;
-    padding: 0px 10px;
-  }
+
+.single-search input {
+    padding: 10px 5px;
+    border-radius: 20rem;
+    border: none;
+}
+
+
+input:focus {
+    outline: none;
+}
 
 .wrap {
     width:80%;
@@ -57,22 +59,21 @@ body {
 }
 
 .side-panel {
-    width:275px;
-    height:530px;
+    width: 25%;
     background-color: #FFFEFE;
     float:left;
 }
 
 .side-panel img {
-    width: 275px;
-    height: 379px;
+    width: 350px;
+    height: 500px;
+    margin-left: -65%;
 }
 
 .rating {
     display: flex;
-    font-family: 'Jaldi', sans-serif;
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: -65%;
     gap: 15px;
 }
 
@@ -89,15 +90,14 @@ body {
 }
 
 button {
-    font-family: 'Jaldi', sans-serif;
     font-size: 19px;
-    width: 166px;
+    width: 70%;
     height: 47px;
     border: none;
     border-radius: 20px;
     background: #F8D937C9;
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: -50%;
     cursor: pointer;
 }
 button:hover {
@@ -108,60 +108,55 @@ button i {
 }
 
 .main-content {
-    width:750px;
-    height:530px;
+    width: 75%;
     background-color: #FFFEFE;
     padding-left: 50px;
     float:right;
 }
 
 .main-content h1 {
-    display: flex;
-    text-align: justify;
-    padding-left: 40px;
+    font-size: 28px;
+    font-weight: 00;
+    margin-left: -10%;
 }
 
 .author {
-    font-family: 'Jaldi', sans-serif;
     font-size: 15px;
-    padding-left: 40px;
+    margin-left: -10%;
 }
 
 .book-info {
     text-align: right;
-    font-family: 'Jaldi', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 22px;
     margin-top: -15px;
     margin-right: 150px;
 }
 
 .description {
-    font-family: 'Jaldi', sans-serif;
-    font-size: 15px;
-    line-height: 25px;
-    padding-left: 15px;
-    margin-top: 30px;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 10%;
+    margin-left: -10%;
 }
 
 .clear {
     clear:both;
 }
 
-.text {
+/* .text {
   box-sizing: border-box;
   float: right;
   margin-right: -90%;
   padding: 1em;
-  width: 105%;
+  width: 100%;
 }
 
 .text {
   border: 3px solid pink;
-}
+} */
 
 h1 {
-    font-family: 'Jaldi', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
@@ -169,7 +164,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Jaldi', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -177,7 +171,6 @@ h2 {
 }
 
 h2 p {
-    font-family: 'Jaldi', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -186,6 +179,249 @@ h2 p {
 }
 
 .text p {
-    font-family: 'Jaldi', sans-serif;
     font-size: 15px;
+}
+@media (max-width:767px) {
+    .Main-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .top-header {
+        width: 100%;
+        background: #14164A;
+    }
+    .top-header ul li {
+        font-weight: 200;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .top-nav-left-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .single-search input {
+        padding: 5px;
+    }
+    .wrap {
+        width:80%;
+        margin:10px 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .side-panel {
+        width: 100%;
+        height:auto;
+        background-color: #FFFEFE;
+    }
+    
+    .side-panel img {
+        width: 40%;
+        height: auto;
+        margin-left: -10%;
+    }
+    
+    .rating {
+        display: block;
+        font-size: 1.2rem;
+        gap: 15px;
+        margin-left: -20%;
+    }
+    
+    button {
+        font-size: 1.5rem;
+        width: 50%;
+        height: auto;
+        margin-left: -15%;
+        
+    }
+    .main-content {
+        width: 100%;
+        height:auto;
+        background-color: #FFFEFE;
+        /* margin: 20px; */
+        padding: 10%;
+    }
+    
+    .main-content h1 {
+        display: flex;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-left: -45%;
+        margin-right: 70%;
+    }
+    
+    .author {
+        font-size: 1.2rem;
+        margin-left: -75%;
+
+    }
+    
+    .book-info {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 10%;
+        margin-right: 55%;
+        margin-left: -60%;
+    }
+    
+    .description {
+        font-size: 1.2rem;
+        margin-right: 20%;
+        margin-left: -80%;
+    }
+    h1 {
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 39px;
+    }
+    
+    h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    
+    h2 p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
+        text-align: right;
+    }
+    
+    .text p {
+        font-size: 1.2rem;
+    }
+
+    
+}
+@media screen and (min-width: 768px)and (max-width: 1200px) {
+    .Main-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .top-header {
+        width: 100%;
+        background: #14164A;
+    }
+    .top-header ul li {
+        font-weight: 200;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .top-nav-left-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .single-search input {
+        padding: 5px;
+    }
+    
+    .side-panel {
+        width: 100%;
+        height:auto;
+        background-color: #FFFEFE;
+    }
+    
+    .side-panel img {
+        width: 50%;
+        height: auto;
+        margin-left: 12%;
+    }
+    
+    .rating {
+        display: block;
+        font-size: 1.2rem;
+        margin-left: 20%;
+    }
+    
+    button {
+        font-size: 1.5rem;
+        width: 50%;
+        height: auto;
+        margin-left: 11%;
+        
+    }
+    .main-content {
+        width: 100%;
+        height:auto;
+        background-color: #FFFEFE;
+        /* margin: 20px; */
+        padding: 10%;
+    }
+    
+    .main-content h1 {
+        display: flex;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-right: 30%;
+    }
+    
+    .author {
+        font-size: 1.2rem;
+        margin-left: 50%;
+
+    }
+    
+    .book-info {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 10%;
+        margin-right: 10%;
+        margin-left: -20%;
+    }
+    
+    .description {
+        font-size: 1.2rem;
+        margin-right: 10%;
+        margin-left: -40%;
+    }
+    
+    h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 39px;
+    }
+    
+    h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    
+    h2 p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
+        text-align: right;
+    }
+    
+    .text p {
+        font-size: 1.2rem;
+}
 }
